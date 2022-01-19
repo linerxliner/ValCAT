@@ -7,7 +7,7 @@ class MaxWordPert(TextConstraint):
         self._max_pct = max_pct
 
     def _check(self, workload):
-        num_word_pert = workload.get_num_word_pert
+        num_word_pert = workload.num_word_pert
 
         if self._max_num:
             r = num_word_pert <= self._max_num
